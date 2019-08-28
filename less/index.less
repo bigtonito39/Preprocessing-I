@@ -54,6 +54,155 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%
+}
+.container{
+	width:100%;
+	padding:5%;
+}
+/*variables mixinsins here*/
+@greycolor:silver;
+@boldfont:bold;
+@fontfamily:"Times New Roman";
+@fontsize:3rem;
+
+
+.navigation(@greycolor,@boldfont ){
+display:flex;
+color:@greycolor;
+font-weight: @boldfont;
+font-size:2.5rem;
+justify-content: flex-end;
+align-content: space-around;
+widows: 90%;
+
+}
+.navigationanchors(){
+	text-decoration: none;
+	
+}
+.Pfomat(@fontsize,@fontfamily){
+	font-size:@fontsize;
+	font-family: @fontfamily;
+}
+.imagesfomat(){
+	width:15%;
+	margin-top:3%;
+	margin-left:1.5%;
+	margin-bottom:1%;
 }
 
+.headers(){
+	font-weight:bold;
+		margin-bottom:2%;
+		border:1px solid grey;
+		width:30%;
+		padding:2%;
+		background-color:#696969;
+		color:white;
+}
+/*regular css here*/
+header{
+	nav{
+		.navigation(@greycolor,@boldfont);
+	}
+	nav a{
+		.navigationanchors();
+		margin-right:2%;
+		margin-bottom:2.5%;
+		color:Black;
+
+	}
+}
+.uppersection{
+	width:100% 85%;
+	background-color:lightgrey;
+	.profilepic{
+		.imagesfomat();
+	}
+	h1{
+		font-size:5rem;
+		margin-left:1%;
+	}
+h4{
+	font-size:2.5rem;
+	margin-top:1%;
+	margin-bottom:1.5%;
+	margin-left:1%;
+	
+	
+}
+p {
+	.Pfomat(@fontsize,@fontfamily );
+	margin-top:1%;
+	margin-bottom:1%;
+	color:Black;
+	margin-left:1%;
+	font-weight:bold;
+
+}
+button{
+	margin-bottom:5%;
+	padding:1% 3%;
+	border-radius:8px;
+	background-color: #696969;
+	color:white;
+	margin-left:1%;
+	margin-top:1%;
+	font-weight:bold;
+	font-size:2rem;
+	}
+	hr{
+		width: 95%;
+	}
+	
+}
+.middlesection{
+	margin-top:3%;
+	display:flex;
+	font-size:@fontsize;
+	justify-content: space-between;
+
+	.learnAboutMe{
+		width:50%;
+	}
+	h2, h3{
+		font-weight:bold;
+		margin-bottom:2%;
+		border:1px solid grey;
+		width:30%;
+		padding:3%;
+		background-color:#696969;
+		color:white;
+	}
+	ul li{
+		border:1px solid grey;
+		padding:1%;
+	}
+	
+}
+.lowersection{
+	font-size:@fontsize;
+	font-weight:@boldfont;
+	margin-bottom: 2%;
+p{
+	border:1px solid silver;
+	width: 25%;
+	
+}	
+h2{
+	.headers()
+}
+}
+
+footer{
+
+	font-size:2rem;;
+	font-weight:@boldfont;
+	background-color:#696969;
+	padding:2.5%;
+	text-align: center;
+	color:white;
+	
+}
