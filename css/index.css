@@ -139,6 +139,16 @@ body {
   width: 90%;
   padding: 5%;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 /*variables mixinsins here*/
 /*regular css here*/
 header {
@@ -150,17 +160,33 @@ header nav {
   display: flex;
   color: silver;
   font-weight: bold;
-  font-size: 2.5rem;
   justify-content: flex-end;
   align-content: space-around;
-  widows: 90%;
+  width: 90%;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
 }
 header nav a {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-right: 2%;
   margin-bottom: 2.5%;
   color: white;
+  font-family: 'Dancing Script', cursive;
+}
+@media (max-width: 800px) {
+  header nav a {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.4rem;
+  }
 }
 header nav a:hover {
   background-color: Red;
@@ -169,6 +195,7 @@ header nav a:hover {
 }
 .uppersection {
   background-color: lightgrey;
+  font-family: 'Dancing Script', cursive;
 }
 .uppersection .profilepic {
   width: 15%;
@@ -180,20 +207,52 @@ header nav a:hover {
   font-size: 5rem;
   margin-left: 1%;
 }
+@media (max-width: 800px) {
+  .uppersection h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 500px) {
+  .uppersection h1 {
+    font-size: 1.5rem;
+  }
+}
 .uppersection h4 {
   font-size: 2.5rem;
   margin-top: 1%;
   margin-bottom: 1.5%;
   margin-left: 1%;
 }
+@media (max-width: 800px) {
+  .uppersection h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 500px) {
+  .uppersection h4 {
+    font-size: 1rem;
+  }
+}
 .uppersection p {
-  font-size: 3rem;
-  font-family: "Times New Roman";
+  font-size: 2.5rem;
   margin-top: 1%;
   margin-bottom: 1%;
   color: Black;
   margin-left: 1%;
   font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+@media (max-width: 800px) {
+  .uppersection p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .uppersection p {
+    font-size: 1.4rem;
+  }
 }
 .uppersection button {
   margin-bottom: 5%;
@@ -207,6 +266,16 @@ header nav a:hover {
   font-size: 2rem;
   border-radius: 60%;
 }
+@media (max-width: 750px) {
+  .uppersection button {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .uppersection button {
+    font-size: 1.25rem;
+  }
+}
 .uppersection button:hover {
   background-color: Red;
 }
@@ -216,12 +285,48 @@ header nav a:hover {
 .middlesection {
   margin-top: 3%;
   display: flex;
-  font-size: 3rem;
+  font-size: 2.5rem;
   justify-content: space-between;
   background-color: lightgrey;
 }
+@media (max-width: 750px) {
+  .middlesection {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .middlesection .learnAboutMe {
   width: 50%;
+  font-family: 'Dancing Script', cursive;
+}
+@media (max-width: 800px) {
+  .middlesection .learnAboutMe {
+    font-size: 1.8rem;
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .middlesection .learnAboutMe {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+.middlesection .goodat {
+  width: 50%;
+  font-family: 'Dancing Script', cursive;
+}
+@media (max-width: 800px) {
+  .middlesection .goodat {
+    font-size: 1.8rem;
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .middlesection .goodat {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-top: 1%;
+  }
 }
 .middlesection h2,
 .middlesection h3 {
@@ -233,13 +338,14 @@ header nav a:hover {
   background-color: #696969;
   color: white;
   border-radius: 12px;
+  font-family: 'Dancing Script', cursive;
 }
 .middlesection ul li {
   border: 1px solid grey;
   padding: 1%;
 }
 .lowersection {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2%;
   margin-top: 3%;
@@ -257,6 +363,7 @@ header nav a:hover {
   background-color: #696969;
   color: white;
   border-radius: 12px;
+  font-family: 'Dancing Script', cursive;
 }
 .lowersection table,
 .lowersection th,
@@ -264,7 +371,15 @@ header nav a:hover {
   border: 1px solid black;
   padding: 0.5%;
   background-color: lightgrey;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+@media (max-width: 800px) {
+  .lowersection table,
+  .lowersection th,
+  .lowersection td {
+    font-size: 1.8rem;
+  }
 }
 .lowersection th {
   margin-left: 0.25%;
@@ -279,4 +394,5 @@ footer {
   padding: 2.5%;
   text-align: center;
   color: white;
+  font-family: 'Dancing Script', cursive;
 }
