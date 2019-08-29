@@ -58,7 +58,7 @@ html, body {
 	font-size: 62.5%
 }
 .container{
-	width:100%;
+	width:90%;
 	padding:5%;
 }
 /*variables mixinsins here*/
@@ -66,6 +66,9 @@ html, body {
 @boldfont:bold;
 @fontfamily:"Times New Roman";
 @fontsize:3rem;
+@backgroundColor:lightgrey;
+@backgroundcolor2:#696969;
+@hoverbackground:Red;
 
 
 .navigation(@greycolor,@boldfont ){
@@ -80,6 +83,7 @@ widows: 90%;
 }
 .navigationanchors(){
 	text-decoration: none;
+	font-size:3rem;
 	
 }
 .Pfomat(@fontsize,@fontfamily){
@@ -91,6 +95,7 @@ widows: 90%;
 	margin-top:3%;
 	margin-left:1.5%;
 	margin-bottom:1%;
+	
 }
 
 .headers(){
@@ -99,21 +104,30 @@ widows: 90%;
 		border:1px solid grey;
 		width:30%;
 		padding:2%;
-		background-color:#696969;
+		background-color:@backgroundcolor2;
 		color:white;
 		border-radius: 12px;
 }
 /*regular css here*/
 header{
+background-color:@backgroundcolor2;
+margin-bottom:2%;
+padding:2%;
 	nav{
 		.navigation(@greycolor,@boldfont);
+		
+		
 	}
 	nav a{
 		.navigationanchors();
 		margin-right:2%;
 		margin-bottom:2.5%;
-		color:Black;
-
+		color:white;	
+	}
+	nav a:hover{
+background-color:@hoverbackground;
+padding:0.3%;
+border-radius:100%;
 	}
 }
 .uppersection{
@@ -155,7 +169,7 @@ button{
 	border-radius:60%;
 	}
 	button:hover{
-		background-color:Red;
+		background-color:@hoverbackground;
 	}
 	hr{
 		width: 95%;
@@ -167,9 +181,12 @@ button{
 	display:flex;
 	font-size:@fontsize;
 	justify-content: space-between;
+	background-color:@backgroundColor;
+	
 
 	.learnAboutMe{
 		width:50%;
+		
 	}
 	h2, h3{
 		.headers()
@@ -184,21 +201,37 @@ button{
 	font-size:@fontsize;
 	font-weight:@boldfont;
 	margin-bottom: 2%;
+	margin-top:3%;
 p{
 	border:1px solid silver;
 	width: 25%;
 	
 }	
 h2{
-	.headers()
+	.headers();
 }
+
+table, th, td{
+	border:1px solid black;
+	padding: 0.5%;
+	background-color:@backgroundColor;
+	font-size:@fontsize;
+	
+}
+th{
+	margin-left:0.25%;
+}
+td{
+font-weight: normal;	
+}
+
 }
 
 footer{
 
 	font-size:2rem;;
 	font-weight:@boldfont;
-	background-color:#696969;
+	background-color:@backgroundcolor2;
 	padding:2.5%;
 	text-align: center;
 	color:white;

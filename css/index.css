@@ -136,11 +136,16 @@ body {
   font-size: 62.5%;
 }
 .container {
-  width: 100%;
+  width: 90%;
   padding: 5%;
 }
 /*variables mixinsins here*/
 /*regular css here*/
+header {
+  background-color: #696969;
+  margin-bottom: 2%;
+  padding: 2%;
+}
 header nav {
   display: flex;
   color: silver;
@@ -152,9 +157,15 @@ header nav {
 }
 header nav a {
   text-decoration: none;
+  font-size: 3rem;
   margin-right: 2%;
   margin-bottom: 2.5%;
-  color: Black;
+  color: white;
+}
+header nav a:hover {
+  background-color: Red;
+  padding: 0.3%;
+  border-radius: 100%;
 }
 .uppersection {
   background-color: lightgrey;
@@ -207,6 +218,7 @@ header nav a {
   display: flex;
   font-size: 3rem;
   justify-content: space-between;
+  background-color: lightgrey;
 }
 .middlesection .learnAboutMe {
   width: 50%;
@@ -230,6 +242,7 @@ header nav a {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2%;
+  margin-top: 3%;
 }
 .lowersection p {
   border: 1px solid silver;
@@ -244,6 +257,20 @@ header nav a {
   background-color: #696969;
   color: white;
   border-radius: 12px;
+}
+.lowersection table,
+.lowersection th,
+.lowersection td {
+  border: 1px solid black;
+  padding: 0.5%;
+  background-color: lightgrey;
+  font-size: 3rem;
+}
+.lowersection th {
+  margin-left: 0.25%;
+}
+.lowersection td {
+  font-weight: normal;
 }
 footer {
   font-size: 2rem;
